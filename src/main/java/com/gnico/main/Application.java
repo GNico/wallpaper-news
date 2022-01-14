@@ -3,8 +3,10 @@ package com.gnico.main;
 import java.awt.Desktop;
 import java.awt.event.ItemEvent;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
@@ -19,7 +21,7 @@ import com.gnico.commands.Command;
 import com.gnico.commands.MultiCommand;
 import com.gnico.commands.ToggleCommand;
 import com.gnico.feed.CouldNotFetchException;
-import com.gnico.feed.FeedReader;
+import com.gnico.feed.NewsFeedReader;
 import com.gnico.feed.NewsEntry;
 import com.gnico.utils.TrayIconManager;
 import com.gnico.wallpaper.WallpaperChanger;
@@ -27,13 +29,18 @@ import com.gnico.wallpaper.WallpaperChanger;
 public class Application implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
-    private static final String RSS_FEED_URL = "https://www.clarin.com/rss/lo-ultimo/";
-    private static final String APP_ICON_NAME = "Headlines Wallpaper";    
-  //  private final TrayIconManager trayIconManager = new TrayIconManager(APP_ICON_NAME, "/resources/appicon.png");        
-    private final TrayIconManager trayIconManager = new TrayIconManager(APP_ICON_NAME, "/appicon.png");        
+    private final TrayIconManager trayIconManager = new TrayIconManager(this.appName, "/resources/appicon.png");      
+    //private final TrayIconManager trayIconManager = new TrayIconManager(this.appName, "/appicon.png");        
     private ScheduledExecutorService scheduler;    
     private MultiCommand dynamicLinks = null;
+    private String rssFeedUrl;
+    private String appName;
 
+    
+    public Application(String appName, String rssFeedUrl) {
+        this.appName = appName; 
+        this.rssFeedUrl = rssFeedUrl;
+    }
     
     public void init() {
         List<Command> commands = new ArrayList<>();
@@ -55,17 +62,25 @@ public class Application implements Runnable {
         logger.info("Updating news...");
         List<NewsEntry> newsEntries;
         try {
-            newsEntries = this.readFeed();
+            newsEntries = this.updateHeadlines(this.rssFeedUrl);
             if (!newsEntries.isEmpty()) {
                 WallpaperChanger wpc = new WallpaperChanger();                
                 wpc.updateWallpaper(newsEntries);
                 createLinkCommands(newsEntries);
             }
         } catch (CouldNotFetchException e) {
-            System.out.println("read exception");
+            logger.error(e.getMessage());
+            clear();
+        } catch (MalformedURLException e) {
+            logger.error("Wrong URL format");
             clear();
         }       
     }
+    
+    public List<NewsEntry> updateHeadlines(String feedPath) throws CouldNotFetchException, MalformedURLException {
+        NewsFeedReader fr = new NewsFeedReader(new URL(feedPath), 5000);      
+        return fr.updateFeed();     
+    }   
         
     public void createLinkCommands(List<NewsEntry> newsEntries) {
         removeLinkCommands();               
@@ -102,11 +117,7 @@ public class Application implements Runnable {
     
     public void stopScheduler() {
         scheduler.shutdown();
-    }
-    
-    public List<NewsEntry> readFeed() throws CouldNotFetchException {
-        FeedReader fr = new FeedReader(RSS_FEED_URL);      
-        return fr.fetch();     
     }    
+    
 }
 

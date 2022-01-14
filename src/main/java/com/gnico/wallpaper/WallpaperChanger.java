@@ -7,8 +7,8 @@ import com.gnico.utils.WindowsUtils;
 
 public class WallpaperChanger {
         
-    //private NewsDrawingTool newsDrawingTool = new NewsDrawingTool("/resources/stars.bmp");    
-    private NewsDrawingTool newsDrawingTool = new NewsDrawingTool("/stars.bmp");    
+    private NewsDrawingTool newsDrawingTool = new NewsDrawingTool("/resources/stars.bmp", "/news.png");    
+   // private NewsDrawingTool newsDrawingTool = new NewsDrawingTool("/stars.bmp", "/news.png");    
     private static final String GENERATED_WALLPAPER_FILENAME = "generatedWallpaper.bmp";
         
     

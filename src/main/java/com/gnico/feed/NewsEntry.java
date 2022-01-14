@@ -18,7 +18,7 @@ public class NewsEntry {
         this.title = title;
         this.description = description;
         this.link = link;
-        this.imageUrl = imageUrl;
+        this.imageUrl = imageUrl == null ? "" : imageUrl;
         this.publishedDate = publishedDate;
     }
 
@@ -50,8 +50,8 @@ public class NewsEntry {
         return imageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImageUrl(String imageUrl) { 
+        this.imageUrl = (imageUrl == null) ? "" :  imageUrl;
     }
 
     public Date getPublishedDate() {

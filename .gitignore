@@ -1,12 +1,7 @@
 #
 # Project specific excludes
 #
-
-tomcat
-
-#
-# Default excludes
-#
+generatedWallpaper.bmp
 
 # Binaries
 *.7z

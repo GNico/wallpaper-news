@@ -22,7 +22,7 @@ public class WindowsUtils {
         String dir = jarPath.substring(1, jarPath.lastIndexOf("/") + 1);
         String filePath = dir + fileName;
                 
-        filePath = "F:/eclipse-workspace/headline-wallpaper/generatedWallpaper.bmp";
+       // filePath = "F:/eclipse-workspace/headline-wallpaper/generatedWallpaper.bmp";
                
         SPI.INSTANCE.SystemParametersInfo(
             new UINT_PTR(SPI.SPI_SETDESKWALLPAPER), 

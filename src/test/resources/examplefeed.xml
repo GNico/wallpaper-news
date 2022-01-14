@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title><![CDATA[Example feed title]]></title>
+		<link>https://feedlink</link>
+		<description><![CDATA[Example feed description]]></description>
+
+		<language><![CDATA[es]]></language>
+
+		<copyright><![CDATA[Copyright 1996-2011 Clarin.com - All rights reserved]]></copyright>
+
+		<ttl><![CDATA[10]]></ttl>
+
+		<image>
+			<url>http://www.clarin.com/static/CLAClarinV3/images/logo.png</url>
+			<title><![CDATA[Clarin.com - Home]]></title>
+			<link>https://www.clarin.com/</link>
+		</image>
+
+		<item>
+			<title><![CDATA[First title]]></title>
+			<link>https://firstlink.html</link>
+			<description><![CDATA[First description]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://firstlink.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 18:00:00 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://firstimage.jpg"
+				length="0" type="image/jpg" />
+		</item>
+
+		<item>
+			<title><![CDATA[Second title]]></title>
+			<link>https://secondlink.html</link>
+			<description><![CDATA[Second description]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://secondlink.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:55:16 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+			
+		</item>
+
+		<item>
+			<title><![CDATA[Juan Fernando Quintero y un mensaje que deja tranquilo a todo River]]></title>
+			<link>https://www.clarin.com/deportes/juan-fernando-quintero-mensaje-deja-tranquilo-river_0_T1Epg2xZZ.html</link>
+			<description><![CDATA["Seguramente en las próximas horas cerraremos todo con River, que es mi preferencia", sostuvo el colombiano durante una conferencia de prensa con su seleccionado. ]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://www.clarin.com/deportes/juan-fernando-quintero-mensaje-deja-tranquilo-river_0_T1Epg2xZZ.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:48:39 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://www.clarin.com/img/2022/01/14/RDfRDA2T-_600x338__1.jpg"
+				length="0" type="image/jpg" />
+		</item>
+
+		<item>
+			<title><![CDATA[Los vecinos que llevan días sin luz en medio de la ola de calor: "Dicen que van a solucionar el problema, pero no arreglan nada"]]></title>
+			<link>https://www.clarin.com/ciudades/vecinos-llevan-dias-luz-medio-ola-calor-dicen-van-solucionar-problema-arreglan-_0_cIrJIEhr2.html</link>
+			<description><![CDATA[Perdieron toda la comida que tenían en la heladera y hay personas mayores que no pueden salir de sus departamentos.]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://www.clarin.com/ciudades/vecinos-llevan-dias-luz-medio-ola-calor-dicen-van-solucionar-problema-arreglan-_0_cIrJIEhr2.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:47:38 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://www.clarin.com/img/2022/01/14/OW_6RUAKM_600x338__1.jpg"
+				length="0" type="image/jpg" />
+		</item>
+
+		<item>
+			<title><![CDATA[Cielo porteño naranja: por qué hay humo y olor a quemado en la Ciudad]]></title>
+			<link>https://www.clarin.com/sociedad/cielo-porteno-naranja-humo-olor-quemado-ciudad_0_q5TCeI4xe.html</link>
+			<description><![CDATA[Usuarios reaccionaron ante el fenómeno en las redes sociales. La explicación.]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://www.clarin.com/sociedad/cielo-porteno-naranja-humo-olor-quemado-ciudad_0_q5TCeI4xe.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:45:15 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://www.clarin.com/img/2022/01/14/tAxu89092_600x338__1.jpg"
+				length="0" type="image/jpg" />
+		</item>
+
+		<item>
+			<title><![CDATA[¿Se viene un conflicto diplomático?: Serbia acusa Australia de "maltratar y humillar" a Novak Djokovic]]></title>
+			<link>https://www.clarin.com/deportes/-viene-conflicto-diplomatico-serbia-acusa-australia-maltratar-humillar-novak-djokovic_0_vGThpvu2_.html</link>
+			<description><![CDATA[Aleksandar Vucic, presidente del país europeo, volvió a pegarle duro al gobierno de Scott Morrison. Y la Federación de Tenis de Serbia declaró que es "inaceptable" que no le permitan jugar.]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://www.clarin.com/deportes/-viene-conflicto-diplomatico-serbia-acusa-australia-maltratar-humillar-novak-djokovic_0_vGThpvu2_.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:44:35 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://www.clarin.com/img/2022/01/13/zrdEzukZX_600x338__1.jpg"
+				length="0" type="image/jpg" />
+		</item>
+
+		<item>
+			<title><![CDATA[Incendios en Ezeiza: las llamas llegaron a metros de un country y la gente salió con baldes, mangueras y usando el agua de las piletas]]></title>
+			<link>https://www.clarin.com/zonales/incendios-ezeiza-llamas-llegaron-metros-country-gente-salio-baldes-mangueras-usando-agua-piletas_0_bMSXUQxxL.html</link>
+			<description><![CDATA[Los bomberos informaron que el fuego está controlado pero el riesgo sigue siendo "inminente" mientras no cambie el clima.]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://www.clarin.com/zonales/incendios-ezeiza-llamas-llegaron-metros-country-gente-salio-baldes-mangueras-usando-agua-piletas_0_bMSXUQxxL.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:44:32 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://www.clarin.com/img/2022/01/14/RJj5jB2p9_600x338__1.jpg"
+				length="0" type="image/jpg" />
+		</item>
+
+		<item>
+			<title><![CDATA[Mercado Libre reclamó al Banco Central anular una decisión que perjudica a las billeteras virtuales]]></title>
+			<link>https://www.clarin.com/economia/mercado-libre-reclamo-banco-central-anular-decision-perjudica-billeteras-virtuales_0_zGMGl6uAD.html</link>
+			<description><![CDATA[El BCRA les prohibió depositar en cuentas a la vista liquidez de sus clientes que no estaba en fondos de inversión. Ahora Mercado Libre pidió formalmente que anulen la medida. Podría ir a la Justicia.]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://www.clarin.com/economia/mercado-libre-reclamo-banco-central-anular-decision-perjudica-billeteras-virtuales_0_zGMGl6uAD.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:38:33 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://www.clarin.com/img/2021/12/08/DDxku7NY__600x338__1.jpg"
+				length="0" type="image/jpg" />
+		</item>
+
+		<item>
+			<title><![CDATA[El presidente de la AMIA cuestionó al  Gobierno por el escándalo con Mohsen Rezai en Nicaragua: "Es inadmisible, doloroso e irritante"]]></title>
+			<link>https://www.clarin.com/politica/presidente-amia-cuestiono-gobierno-escandalo-mohsen-rezai-nicaragua-inadmisible-doloroso-irritante-_0_fUzR6BSdx.html</link>
+			<description><![CDATA["Un embajador no puede no saber que Argentina tiene alertas rojas de Interpol contra funcionarios de otro país", señaló Ariel Eichbaum.]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://www.clarin.com/politica/presidente-amia-cuestiono-gobierno-escandalo-mohsen-rezai-nicaragua-inadmisible-doloroso-irritante-_0_fUzR6BSdx.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:26:14 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://www.clarin.com/img/2022/01/11/QfxxFkSqW_600x338__1.jpg"
+				length="0" type="image/jpg" />
+		</item>
+
+		<item>
+			<title><![CDATA[La geometría viaja desde la Plata]]></title>
+			<link>https://www.clarin.com/revista-enie/arte/geometria-viaja-plata_0_tnsla_59U.html</link>
+			<description><![CDATA[Gabriela Boer, Juan DLala y Pablo Morgante, artistas platenses, exhiben sus obras de abstracción geométrica. También es un tributo a la escuela que crearon sus maestros César Paternosto y Luis Tomasello.]]></description>
+
+			<guid isPermaLink="true"><![CDATA[https://www.clarin.com/revista-enie/arte/geometria-viaja-plata_0_tnsla_59U.html]]></guid>
+
+			<pubDate><![CDATA[Fri, 14 Jan 2022 17:25:17 -0300]]></pubDate>
+
+			<dc:creator><![CDATA[Clarin.com]]></dc:creator>
+
+			<enclosure
+				url="https://www.clarin.com/img/2022/01/14/GzbcALFG__600x338__1.jpg"
+				length="0" type="image/jpg" />
+		</item>
+	</channel>
+</rss>
